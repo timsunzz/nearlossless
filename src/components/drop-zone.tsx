@@ -35,8 +35,7 @@ export function DropZone({ disabled, onFile, error }: DropZoneProps) {
           onDragOver={(event) => {
             event.preventDefault();
             setDragOver(true);
-          }
-          }
+          }}
           onDragLeave={() => setDragOver(false)}
           onDrop={() => setDragOver(false)}
           onChange={(event) => {
