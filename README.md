@@ -17,7 +17,7 @@ npm run dev
 
 Cloud Agent 的 Preview 会把这个端口映射到你本机。请在 **Cursor 桌面端**打开这条对话后再点 Preview；只在网页 `cursor.com/agents` 里点，经常打不开。如果页面空白，多半是 Next.js 拦了跨域的 `/_next` 资源——仓库已把 `cursor.com` 等预览域名加进 `allowedDevOrigins`。
 
-站点内有 `/principles` 技术原理与 `/faq` 常见问题。结给搜索引擎和语言模型用的入口是 `/sitemap.xml`、`/robots.txt`、`/llms.txt` 与 `/llms-full.txt`。部署到正式域名时，请设置 `NEXT_PUBLIC_SITE_URL`，以便 canonical、sitemap 与 Open Graph 使用绝对地址。
+站点内有 `/principles` 技术原理与 `/faq` 常见问题。给搜索引擎和语言模型用的入口是 `/sitemap.xml`、`/robots.txt`、`/llms.txt` 与 `/llms-full.txt`。部署到正式域名时，请设置 `NEXT_PUBLIC_SITE_URL`，以便 canonical、sitemap 与 Open Graph 使用绝对地址。
 
 ```bash
 npm run build
